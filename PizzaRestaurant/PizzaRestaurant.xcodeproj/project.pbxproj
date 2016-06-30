@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		662A434B1D2583B100AB64FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 662A434A1D2583B100AB64FA /* main.m */; };
 		662A43531D2583F800AB64FA /* Pizza.m in Sources */ = {isa = PBXBuildFile; fileRef = 662A43521D2583F800AB64FA /* Pizza.m */; };
+		662A43591D25B2F000AB64FA /* Kitchen.m in Sources */ = {isa = PBXBuildFile; fileRef = 662A43581D25B2F000AB64FA /* Kitchen.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		662A434A1D2583B100AB64FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		662A43511D2583F800AB64FA /* Pizza.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pizza.h; sourceTree = "<group>"; };
 		662A43521D2583F800AB64FA /* Pizza.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pizza.m; sourceTree = "<group>"; };
+		662A43571D25B2F000AB64FA /* Kitchen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kitchen.h; sourceTree = "<group>"; };
+		662A43581D25B2F000AB64FA /* Kitchen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kitchen.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				662A434A1D2583B100AB64FA /* main.m */,
 				662A43521D2583F800AB64FA /* Pizza.m */,
 				662A43511D2583F800AB64FA /* Pizza.h */,
+				662A43571D25B2F000AB64FA /* Kitchen.h */,
+				662A43581D25B2F000AB64FA /* Kitchen.m */,
 			);
 			path = PizzaRestaurant;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 			files = (
 				662A43531D2583F800AB64FA /* Pizza.m in Sources */,
 				662A434B1D2583B100AB64FA /* main.m in Sources */,
+				662A43591D25B2F000AB64FA /* Kitchen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +251,7 @@
 				662A43501D2583B100AB64FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

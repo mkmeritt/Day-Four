@@ -8,11 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSUInteger, PizzaSize) {
+    PizzaSizeNoSize,
+    PizzaSizeSmall,
+    PizzaSizeMedium,
+    PizzaSizeLarge,
+};
+
 @interface Pizza : NSObject
 
+@property (nonatomic, assign) int size;
 
--(id)initWithSizeAndToppings: (NSArray*)Toppings size:(NSString*)Size;
+- (instancetype)initWithSize:(PizzaSize)size toppings:(NSArray *)toppings;
 -(NSString*)pizzaSize;
 -(NSMutableString*)toppings: (NSArray*)toppings;
--(void)printPizza;
++(Pizza *)largePepperoni;
+
 @end

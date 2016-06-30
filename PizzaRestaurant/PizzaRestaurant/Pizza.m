@@ -10,31 +10,12 @@
 
 @implementation Pizza
 
-enum size {
-    small,
-    medium,
-    large
-};
-
-enum size pizzasize;
-
--(id)initWithSizeAndToppings:(NSArray *)Toppings size:(NSString*)Size {
+-(instancetype)initWithSize:(PizzaSize)size toppings:(NSArray *)toppings {
     if(self = [super init]){
-       
-        if([Size isEqualToString:@"small"]){
-             pizzasize = small;
-        }
         
-        if([Size isEqualToString:@"medium"]){
-            pizzasize = medium;
-        }
-        
-        if([Size isEqualToString:@"large"]){
-            pizzasize = large;
-        }
-        
-        Toppings = [[NSArray alloc] initWithArray:Toppings];
-    }
+        NSLog(@"You ordered %lu %@", (unsigned long)size, toppings);
+        self.size = size;
+}
     
     return self;
 }
@@ -43,16 +24,16 @@ enum size pizzasize;
     
     NSString* s = @"";
     
-    switch (pizzasize) {
-        case small:
+    switch (self.size) {
+        case PizzaSizeSmall:
             s = @"small";
             break;
             
-        case medium:
+        case PizzaSizeMedium:
             s = @"medium";
             break;
             
-        case large:
+        case PizzaSizeLarge:
             s = @"large";
             break;
     }
