@@ -24,6 +24,8 @@ int main(int argc, const char * argv[]) {
         
         BOOL validCard;
         
+        while (YES) {
+        
         NSLog(@"Welcome to the clinic! \n");
         NSLog(@"Please enter the patient's name: \n");
         
@@ -77,7 +79,7 @@ int main(int argc, const char * argv[]) {
         
         
         
-        
+        }
         
         
         

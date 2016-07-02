@@ -59,7 +59,7 @@
     }
     
     
-    NSString* finalPrescription = [NSString stringWithFormat: @"I, the Doctor recommend that %@ take %@ to clear their symptoms of %@", _patientInstance.name, prescription, symptoms];
+    NSString* finalPrescription = [NSString stringWithFormat: @"I, the Doctor recommend that %@ take %@ to clear their symptoms of %@ \n", _patientInstance.name, prescription, symptoms];
 
     
     return finalPrescription;
