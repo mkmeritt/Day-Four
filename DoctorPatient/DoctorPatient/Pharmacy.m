@@ -12,8 +12,8 @@
 
 -(instancetype)init {
     if(self = [super init]) {
-        _prescriptionList = [[NSMutableArray alloc] init];
     }
+    
     
     return self;
 }
@@ -23,11 +23,15 @@
     
     NSLog(@"%@", prescription);
     
-    [_prescriptionList addObject:prescription];
-    
-    for(Patient* patient in doctor.acceptedPatients) {
+}
+
+-(void)printPrescription:(Patient *)patient Doctor:(Doctor *)doctor{
+
+    for(NSString* stng in doctor.acceptedPatients) {
         
+        NSLog(@"%@ \n", stng);
     }
+    
 }
 
 @end

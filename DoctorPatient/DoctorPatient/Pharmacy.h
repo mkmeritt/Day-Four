@@ -13,6 +13,7 @@
 @interface Pharmacy : NSObject
 
 -(void)makePrescription: (Patient*)patient Doctor:(Doctor*)doctor;
+-(void)printPrescription: (Patient*)patient Doctor:(Doctor*)doctor;
 
 @property (nonatomic, strong) NSMutableArray* prescriptionList;
 

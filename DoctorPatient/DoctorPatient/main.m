@@ -77,7 +77,8 @@ int main(int argc, const char * argv[]) {
         
         [pharmacy makePrescription:patient Doctor:doctor];
         
-        
+            
+        [pharmacy printPrescription:patient Doctor:doctor];
         
         }
         

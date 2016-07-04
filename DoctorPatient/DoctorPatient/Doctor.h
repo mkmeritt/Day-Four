@@ -16,7 +16,10 @@
 -(NSString*)writePrescription: (NSString*)symptoms;
 -(void)visitWithPatient: (Patient*)aPatient name:(NSString*)Name age:(NSString*)Age valid:(BOOL)Valid;
 
+-(void)addStoredPatientsWithPrescription;
+
 @property (nonatomic, strong) NSMutableArray* acceptedPatients;
+@property (nonatomic, strong) NSMutableArray* storedPatientsWithPrescription;
 @property (nonatomic, assign) BOOL requestMedication;
 @property (nonatomic, strong) Patient* patientInstance;
 @end

@@ -66,6 +66,13 @@
     
 }
 
+-(void)addStoredPatientsWithPrescription{
+    for(Patient* patient in _acceptedPatients) {
+        NSString* string = [NSString stringWithFormat:@"Patient Name: %@\n Patient Prescription: %@\n", patient.name, [self writePrescription:patient.symptoms]];
+        
+        [self.storedPatientsWithPrescription addObject:string];
+    }
+}
 
 
 @end
